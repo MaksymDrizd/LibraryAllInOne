@@ -18,11 +18,11 @@ public class BookPage extends BasePage {
     @FindBy(id = "book_categories")
     public WebElement mainCategoryElement;
 
-    @FindBy(name = "name")
+    @FindBy(xpath = "//tbody//td[3]")
     public WebElement bookName;
 
 
-    @FindBy(xpath = "(//input[@type='text'])[4]")
+    @FindBy(xpath = "//tbody//td[4]")
     public WebElement author;
 
     @FindBy(xpath = "//div[@class='portlet-title']//a")
@@ -34,7 +34,7 @@ public class BookPage extends BasePage {
     @FindBy(xpath = "//div[@class='toast-message']")
     public WebElement toastMessage;
 
-    @FindBy(name = "year")
+    @FindBy(xpath = "//tbody//td[6]")
     public WebElement year;
 
     @FindBy(name = "isbn")

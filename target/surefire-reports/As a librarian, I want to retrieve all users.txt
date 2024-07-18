@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: As a librarian, I want to retrieve all users
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.162 s - in As a librarian, I want to retrieve all users

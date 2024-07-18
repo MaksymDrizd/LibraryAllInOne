@@ -2,6 +2,7 @@ package com.library.utility;
 
 import com.github.javafaker.Faker;
 import io.restassured.http.ContentType;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -80,6 +81,14 @@ public class LibraryAPI_Util {
         userMap.put("address", faker.address().cityName());
 
         return userMap ;
+    }
+    public static Map<String,Object> generatingRandomData(String dataType){
+
+        return switch (dataType){
+            case "user" -> getRandomUserMap();
+            case "book" -> getRandomBookMap();
+            default -> throw new RuntimeException("Not Valid DataType");
+        };
     }
 
 

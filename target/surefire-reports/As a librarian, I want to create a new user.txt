@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: As a librarian, I want to create a new user
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.515 s - in As a librarian, I want to create a new user
