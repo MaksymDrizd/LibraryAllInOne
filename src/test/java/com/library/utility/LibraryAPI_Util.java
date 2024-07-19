@@ -20,9 +20,11 @@ public class LibraryAPI_Util {
     public static String getToken(String userType){
 
 
-        String email=ConfigurationReader.getProperty(userType+"_username");
-        String password="libraryUser";
+//        String email=ConfigurationReader.getProperty(userType+"_username");
+//        String password="libraryUser";
 
+        String email = System.getenv(userType+"_username");
+        String password = System.getenv(userType+"_password");
 
 
         return getToken(email,password);
@@ -82,13 +84,29 @@ public class LibraryAPI_Util {
 
         return userMap ;
     }
+//    public static Map<String,Object> generatingRandomData(String dataType){
+//
+//        return switch (dataType){
+//            case "user" -> getRandomUserMap();
+//            case "book" -> getRandomBookMap();
+//            default -> throw new RuntimeException("Not Valid DataType");
+//        };
+//    }
     public static Map<String,Object> generatingRandomData(String dataType){
 
-        return switch (dataType){
-            case "user" -> getRandomUserMap();
-            case "book" -> getRandomBookMap();
-            default -> throw new RuntimeException("Not Valid DataType");
+        Map<String,Object> randomMap = new LinkedHashMap<>();
+
+         switch (dataType){
+            case "user" :
+                randomMap = getRandomUserMap();
+                break;
+            case "book" :
+                randomMap = getRandomBookMap();
+                break;
+            default :
+                 throw new RuntimeException("Not Valid DataType");
         };
+        return randomMap;
     }
 
 
