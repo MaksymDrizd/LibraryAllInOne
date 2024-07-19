@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: As a librarian, I want to create a new user
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.515 s - in As a librarian, I want to create a new user
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.214 s <<< FAILURE! - in As a librarian, I want to create a new user
+As a librarian, I want to create a new user.Create a new user all layers  Time elapsed: 3.666 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+

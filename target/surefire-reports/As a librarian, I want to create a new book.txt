@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: As a librarian, I want to create a new book
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.489 s - in As a librarian, I want to create a new book
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.939 s <<< FAILURE! - in As a librarian, I want to create a new book
+As a librarian, I want to create a new book.Create a new book all layers  Time elapsed: 8.387 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Time To Murder And Create4]> but was:<[]>
+

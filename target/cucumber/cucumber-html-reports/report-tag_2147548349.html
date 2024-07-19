@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>18 Jul 2024, 14:11</td>
+      <td>19 Jul 2024, 10:09</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@db</td>
-          <td      class="passed"    >24</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >16</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >6</td>
           <td >0</td>
           <td >0</td>
           <td class="total">24</td>
 
-          <td  class="passed"    >2</td>
           <td >0</td>
+          <td  class="failed"    >2</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="10045501100">10.045</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="9015584000">9.015</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -184,12 +184,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">6.142</span>
+  <span class="lead-duration duration">6.855</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new book all layers</span>
 
@@ -200,7 +200,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -222,7 +222,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.library.steps.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">1.377</span>
+  <span class="lead-duration duration">0.577</span>
 
           </div>
 
@@ -238,7 +238,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.library.steps.Hooks.setUpDB()</span>
 
-  <span class="lead-duration duration">0.406</span>
+  <span class="lead-duration duration">0.583</span>
 
           </div>
 
@@ -255,9 +255,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -267,7 +267,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -275,7 +275,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I logged Library api as a <span class="argument">&quot;librarian&quot;</span></span>
 
-  <span class="lead-duration duration">1.396</span>
+  <span class="lead-duration duration">1.865</span>
 
 </div>
 
@@ -302,7 +302,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Accept header is <span class="argument">&quot;application/json&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -356,7 +356,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create a random <span class="argument">&quot;book&quot;</span> as request body</span>
 
-  <span class="lead-duration duration">0.021</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -383,7 +383,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I logged in Library UI as <span class="argument">&quot;librarian&quot;</span></span>
 
-  <span class="lead-duration duration">0.518</span>
+  <span class="lead-duration duration">0.543</span>
 
 </div>
 
@@ -410,7 +410,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I navigate to <span class="argument">&quot;Books&quot;</span> page</span>
 
-  <span class="lead-duration duration">0.701</span>
+  <span class="lead-duration duration">0.458</span>
 
 </div>
 
@@ -437,7 +437,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I send POST request to <span class="argument">&quot;/add_book&quot;</span> endpoint</span>
 
-  <span class="lead-duration duration">0.255</span>
+  <span class="lead-duration duration">0.234</span>
 
 </div>
 
@@ -518,7 +518,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">the field value for <span class="argument">&quot;message&quot;</span> path should be equal to <span class="argument">&quot;The book has been created.&quot;</span></span>
 
-  <span class="lead-duration duration">0.011</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -545,7 +545,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name"><span class="argument">&quot;book_id&quot;</span> field should not be null</span>
 
-  <span class="lead-duration duration">0.015</span>
+  <span class="lead-duration duration">0.014</span>
 
 </div>
 
@@ -568,11 +568,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">UI, Database and API created book information must match</span>
 
-  <span class="lead-duration duration">3.219</span>
+  <span class="lead-duration duration">3.701</span>
 
 </div>
 
@@ -580,6 +580,22 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.junit.ComparisonFailure:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.junit.ComparisonFailure: expected:&lt;[Time To Murder And Create4]&gt; but was:&lt;[]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.library.steps.APIStepDefs.ui_database_and_api_created_book_information_must_match(APIStepDefs.java:205)
+	at &#10045;.UI, Database and API created book information must match(file:///C:/Users/makc2/IdeaProjects/LibraryAllInOne/src/test/resources/features/rest/us03.feature:31)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -599,7 +615,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -611,13 +627,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.library.steps.Hooks.tearDownDB()</span>
+              <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.354</span>
 
           </div>
 
@@ -626,14 +642,29 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_2129440425.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_2129440425.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+              <span class="location name">com.library.steps.Hooks.tearDownDB()</span>
 
-  <span class="lead-duration duration">0.229</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -666,12 +697,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">3.903</span>
+  <span class="lead-duration duration">2.160</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new user all layers</span>
 
@@ -682,11 +713,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -698,13 +729,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-6" class="inner-level collapse collapsable-details ">
+    <div id="before-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.library.steps.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">0.533</span>
+  <span class="lead-duration duration">0.549</span>
 
           </div>
 
@@ -720,7 +751,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.library.steps.Hooks.setUpDB()</span>
 
-  <span class="lead-duration duration">0.574</span>
+  <span class="lead-duration duration">0.610</span>
 
           </div>
 
@@ -737,9 +768,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -749,7 +780,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -757,7 +788,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I logged Library api as a <span class="argument">&quot;librarian&quot;</span></span>
 
-  <span class="lead-duration duration">2.097</span>
+  <span class="lead-duration duration">1.867</span>
 
 </div>
 
@@ -784,7 +815,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Accept header is <span class="argument">&quot;application/json&quot;</span></span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -838,7 +869,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I create a random <span class="argument">&quot;user&quot;</span> as request body</span>
 
-  <span class="lead-duration duration">0.023</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -865,7 +896,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I send POST request to <span class="argument">&quot;/add_user&quot;</span> endpoint</span>
 
-  <span class="lead-duration duration">0.241</span>
+  <span class="lead-duration duration">0.253</span>
 
 </div>
 
@@ -888,11 +919,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status code should be <span class="argument">200</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.014</span>
 
 </div>
 
@@ -900,6 +931,47 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$8.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor117.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$4.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.library.steps.APIStepDefs.status_code_should_be(APIStepDefs.java:65)
+	at &#10045;.status code should be 200(file:///C:/Users/makc2/IdeaProjects/LibraryAllInOne/src/test/resources/features/rest/us04.feature:23)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -915,7 +987,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Response Content type is <span class="argument">&quot;application/json; charset=utf-8&quot;</span></span>
 
@@ -942,11 +1014,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">the field value for <span class="argument">&quot;message&quot;</span> path should be equal to <span class="argument">&quot;The user has been created.&quot;</span></span>
 
-  <span class="lead-duration duration">0.011</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -969,11 +1041,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name"><span class="argument">&quot;user_id&quot;</span> field should not be null</span>
 
-  <span class="lead-duration duration">0.021</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -996,11 +1068,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">created user information should match with Database</span>
 
-  <span class="lead-duration duration">0.054</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1023,11 +1095,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">created user should be able to login Library UI</span>
 
-  <span class="lead-duration duration">0.321</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1050,11 +1122,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">created user name should appear in Dashboard Page</span>
 
-  <span class="lead-duration duration">1.130</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1081,7 +1153,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1093,13 +1165,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-8" class="inner-level collapse collapsable-details ">
+    <div id="after-11" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.library.steps.Hooks.tearDownDB()</span>
+              <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.328</span>
 
           </div>
 
@@ -1108,14 +1180,29 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_-1343390032.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-12" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1343390032.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+              <span class="location name">com.library.steps.Hooks.tearDownDB()</span>
 
-  <span class="lead-duration duration">0.196</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
